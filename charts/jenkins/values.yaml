@@ -77,7 +77,7 @@ master:
   #      - "uname"
   #      - "-a"
   disableRememberMe: false
-  numExecutors: 2
+  numExecutors: 1
   # configures the executor mode of the Jenkins node. Possible values are: NORMAL or EXCLUSIVE
   executorMode: "NORMAL"
   # This is ignored if enableRawHtmlMarkupFormatter is true
@@ -101,7 +101,7 @@ master:
   # If you disable the non-Jenkins identity store and instead use the Jenkins internal one,
   # you should revert master.adminUser to your preferred admin user:
   adminUser: "admin"
-  # adminPassword: <defaults to random>
+  # adminPassword: docker@123
   admin:
     existingSecret: ""
     userKey: jenkins-admin-user
